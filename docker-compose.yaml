@@ -3,13 +3,52 @@
     image: refactoringchallenge
     build:
       context: .
-      dockerfile: RefactoringChallenge/Dockerfile
+      dockerfile: RefactoringChallenge.Output/Dockerfile
+      platforms:
+        - linux/arm64
+    environment:
+      - DOCKER_CONTAINER=true
+    networks:
+      - refactoring-network
+  
+  tests:
+    build:
+      context: .
+      dockerfile: Tests.Dockerfile
+      platforms:
+        - linux/arm64
+    environment:
+      - DOCKER_CONTAINER=true
+      - MSSQL_HOST=mssql
+      - MSSQL_SA_PASSWORD=RCPassword1!
+      - ConnectionStrings__DefaultConnection=Server=mssql,1433;Database=refactoringchallenge;User ID=sa;Password=RCPassword1!;TrustServerCertificate=True;MultipleActiveResultSets=true;Connection Timeout=60;
+    depends_on:
+      mssql:
+        condition: service_healthy
+    networks:
+      - refactoring-network
 
   mssql:
-    image: mcr.microsoft.com/mssql/server:2022-latest
+    image: mcr.microsoft.com/azure-sql-edge:latest
     container_name: mssql
+    platform: linux/arm64
     ports:
       - "1433:1433"
     environment:
       ACCEPT_EULA: "Y"
       SA_PASSWORD: "RCPassword1!"
+      MSSQL_PID: "Developer"
+    healthcheck:
+      test: ["CMD-SHELL", "pidof sqlservr || exit 1"]
+      interval: 10s
+      timeout: 5s
+      retries: 10
+      start_period: 20s
+    volumes:
+      - ./RefactoringChallenge.Output/DatabaseSchema.sql:/docker-entrypoint-initdb.d/DatabaseSchema.sql
+    networks:
+      - refactoring-network
+
+networks:
+  refactoring-network:
+    driver: bridge

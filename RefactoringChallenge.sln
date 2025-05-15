@@ -1,7 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RefactoringChallenge", "RefactoringChallenge\RefactoringChallenge.csproj", "{437DE447-F7DF-4D86-97E2-4FE39249D9A8}"
-EndProject
+# 
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{0AA6005C-BBBF-4536-B0F8-59D83EE94BAB}"
 	ProjectSection(SolutionItems) = preProject
 		docker-compose.yaml = docker-compose.yaml
@@ -9,6 +8,14 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		LICENSE = LICENSE
 		.gitignore = .gitignore
 	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RefactoringChallenge.Tests", "RefactoringChallenge.Tests\RefactoringChallenge.Tests.csproj", "{BCB45B48-92B5-4973-8B7B-355AEFB176A7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RefactoringChallenge.Common", "RefactoringChallenge.Common\RefactoringChallenge.Common.csproj", "{82A8BE65-5A8B-44D4-A01D-B94DFB88FC14}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RefactoringChallenge.Orchestration", "RefactoringChallenge.Orchestration\RefactoringChallenge.Orchestration.csproj", "{FDC993A9-C022-483F-A7E8-3E98867A2C47}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RefactoringChallenge.Output", "RefactoringChallenge.Output\RefactoringChallenge.Output.csproj", "{72F48B7E-5251-4A55-A730-235ACAF65F25}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -20,5 +27,21 @@ Global
 		{437DE447-F7DF-4D86-97E2-4FE39249D9A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{437DE447-F7DF-4D86-97E2-4FE39249D9A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{437DE447-F7DF-4D86-97E2-4FE39249D9A8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BCB45B48-92B5-4973-8B7B-355AEFB176A7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BCB45B48-92B5-4973-8B7B-355AEFB176A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BCB45B48-92B5-4973-8B7B-355AEFB176A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BCB45B48-92B5-4973-8B7B-355AEFB176A7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{82A8BE65-5A8B-44D4-A01D-B94DFB88FC14}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{82A8BE65-5A8B-44D4-A01D-B94DFB88FC14}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{82A8BE65-5A8B-44D4-A01D-B94DFB88FC14}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{82A8BE65-5A8B-44D4-A01D-B94DFB88FC14}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FDC993A9-C022-483F-A7E8-3E98867A2C47}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FDC993A9-C022-483F-A7E8-3E98867A2C47}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FDC993A9-C022-483F-A7E8-3E98867A2C47}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FDC993A9-C022-483F-A7E8-3E98867A2C47}.Release|Any CPU.Build.0 = Release|Any CPU
+		{72F48B7E-5251-4A55-A730-235ACAF65F25}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{72F48B7E-5251-4A55-A730-235ACAF65F25}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{72F48B7E-5251-4A55-A730-235ACAF65F25}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{72F48B7E-5251-4A55-A730-235ACAF65F25}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

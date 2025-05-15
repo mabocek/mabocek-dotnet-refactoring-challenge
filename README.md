@@ -200,39 +200,7 @@ To run the tests in Docker:
 ./run-docker-tests.sh
 ```
 
-## ARM64 Architecture Challenges
-
-### MSSQL in Docker for ARM64
-Running the application on ARM64 architectures (like Apple Silicon M1/M2 Macs) presented specific challenges:
-
-- Standard SQL Server Docker images don't support ARM64 architecture
-- Had to replace the standard MSSQL image with `azure-sql-edge` which provides ARM64 support
-- Configuration in `docker-compose.yaml`:
-  ```yaml
-  mssql:
-    image: mcr.microsoft.com/azure-sql-edge:latest
-    platform: linux/arm64
-    # ... other configuration
-  ```
-
-### SQL Command Line Tools for ARM64
-Another challenge was the lack of native `sqlcmd` support for ARM64:
-
-- Traditional `sqlcmd` tools aren't available for ARM64 architecture
-- Implemented a solution using Microsoft's `go-sqlcmd` as an alternative
-- Added installation in the Docker file:
-  ```dockerfile
-  # Install go-sqlcmd for ARM64
-  RUN mkdir -p /opt/sqlcmd/bin && \
-      cd /opt/sqlcmd/bin && \
-      export GOSQLCMD_VERSION=v1.8.2 && \
-      curl -L -o sqlcmd.tar.bz2 https://github.com/microsoft/go-sqlcmd/releases/download/${GOSQLCMD_VERSION}/sqlcmd-linux-arm64.tar.bz2 && \
-      tar -xjf sqlcmd.tar.bz2 && \
-      chmod +x sqlcmd
-  ```
-- Created specialized scripts to handle database initialization and health checks using go-sqlcmd
-
-These adaptations ensure the development environment works seamlessly across different architectures, providing a consistent experience for developers regardless of their hardware platform.
+This ensures consistent test execution across different environments and simplifies CI/CD integration.
 
 ## Future Improvement Opportunities
 
