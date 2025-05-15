@@ -20,7 +20,7 @@ public class Order
     // Check if the order is ready for shipping
     public bool IsReadyForShipping()
     {
-        return Status.Equals("Ready", StringComparison.OrdinalIgnoreCase);
+        return Status.Equals(ModelConstants.OrderConstants.OrderStatusReady, StringComparison.OrdinalIgnoreCase);
     }
 
     // Override ToString to provide a useful representation
