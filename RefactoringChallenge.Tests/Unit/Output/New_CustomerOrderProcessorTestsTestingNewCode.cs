@@ -37,36 +37,6 @@ public class New_CustomerOrderProcessorTestsTestingNewCode
         _processor = new New_CustomerOrderProcessor(_mockOrderProcessingService.Object);
     }
 
-    // [Test]
-    // public void NewProcessCustomerOrders_ForVipCustomerWithLargeOrder_AppliesCorrectDiscounts()
-    // {
-    //     // Arrange
-    //     int customerId = 1; // VIP customer
-    //     var expectedOrders = SetupMockOrderProcessingService(customerId);
-
-    //     // Act
-    //     var result = _processor.ProcessCustomerOrders(customerId);
-
-    //     // Assert
-    //     Assert.That(result, Is.Not.Null);
-    //     Assert.That(result.Count, Is.EqualTo(2));
-
-    //     var largeOrder = result.Find(o => o.Id == 1);
-    //     Assert.That(largeOrder, Is.Not.Null);
-    //     Assert.That(largeOrder.DiscountPercent, Is.EqualTo(25)); // Max. discount 25%
-    //     Assert.That(largeOrder.Status, Is.EqualTo("Ready"));
-
-    //     using (var connection = new SqlConnection(_connectionString))
-    //     {
-    //         connection.Open();
-    //         using (var command = new SqlCommand("SELECT StockQuantity FROM Inventory WHERE ProductId = 1", connection))
-    //         {
-    //             var newStock = (int)command.ExecuteScalar();
-    //             Assert.That(newStock, Is.EqualTo(90)); // Origin qty 100, ordered 10
-    //         }
-    //     }
-    // }
-
     [Test]
     public void ProcessCustomerOrders_ForRegularCustomerWithSmallOrder_AppliesMinimalDiscount()
     {

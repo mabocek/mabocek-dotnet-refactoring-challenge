@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<coverage line-rate="0" branch-rate="1" version="1.9" timestamp="1747340687" lines-covered="0" lines-valid="27" branches-covered="0" branches-valid="0">
+<coverage line-rate="0" branch-rate="1" version="1.9" timestamp="1747343033" lines-covered="0" lines-valid="27" branches-covered="0" branches-valid="0">
   <sources>
     <source></source>
   </sources>
   <packages>
     <package name="RefactoringChallenge.Common" line-rate="0" branch-rate="1" complexity="9">
       <classes>
-        <class name="RefactoringChallenge.Models.Customer" filename="https://raw.githubusercontent.com/mabocek/mabocek-dotnet-refactoring-challenge/bfce9d8556a1e7629e015c92ec2ba380fc2e485d/RefactoringChallenge.Common/Models/Customer.cs" line-rate="0" branch-rate="1" complexity="2">
+        <class name="RefactoringChallenge.Models.Customer" filename="https://raw.githubusercontent.com/mabocek/mabocek-dotnet-refactoring-challenge/be39c87e2a2052104aeaab3a983683236ae87991/RefactoringChallenge.Common/Models/Customer.cs" line-rate="0" branch-rate="1" complexity="2">
           <methods>
             <method name="GetYearsAsCustomer" signature="()" line-rate="0" branch-rate="1" complexity="1">
               <lines>
@@ -32,7 +32,7 @@
             <line number="21" hits="0" branch="False" />
           </lines>
         </class>
-        <class name="RefactoringChallenge.Models.Order" filename="https://raw.githubusercontent.com/mabocek/mabocek-dotnet-refactoring-challenge/bfce9d8556a1e7629e015c92ec2ba380fc2e485d/RefactoringChallenge.Common/Models/Order.cs" line-rate="0" branch-rate="1" complexity="3">
+        <class name="RefactoringChallenge.Models.Order" filename="https://raw.githubusercontent.com/mabocek/mabocek-dotnet-refactoring-challenge/be39c87e2a2052104aeaab3a983683236ae87991/RefactoringChallenge.Common/Models/Order.cs" line-rate="0" branch-rate="1" complexity="3">
           <methods>
             <method name="GetFinalAmount" signature="()" line-rate="0" branch-rate="1" complexity="1">
               <lines>
@@ -68,7 +68,7 @@
             <line number="30" hits="0" branch="False" />
           </lines>
         </class>
-        <class name="RefactoringChallenge.Models.OrderItem" filename="https://raw.githubusercontent.com/mabocek/mabocek-dotnet-refactoring-challenge/bfce9d8556a1e7629e015c92ec2ba380fc2e485d/RefactoringChallenge.Common/Models/OrderItem.cs" line-rate="0" branch-rate="1" complexity="2">
+        <class name="RefactoringChallenge.Models.OrderItem" filename="https://raw.githubusercontent.com/mabocek/mabocek-dotnet-refactoring-challenge/be39c87e2a2052104aeaab3a983683236ae87991/RefactoringChallenge.Common/Models/OrderItem.cs" line-rate="0" branch-rate="1" complexity="2">
           <methods>
             <method name="GetSubtotal" signature="()" line-rate="0" branch-rate="1" complexity="1">
               <lines>
@@ -94,7 +94,7 @@
             <line number="22" hits="0" branch="False" />
           </lines>
         </class>
-        <class name="RefactoringChallenge.Models.Product" filename="https://raw.githubusercontent.com/mabocek/mabocek-dotnet-refactoring-challenge/bfce9d8556a1e7629e015c92ec2ba380fc2e485d/RefactoringChallenge.Common/Models/Product.cs" line-rate="0" branch-rate="1" complexity="2">
+        <class name="RefactoringChallenge.Models.Product" filename="https://raw.githubusercontent.com/mabocek/mabocek-dotnet-refactoring-challenge/be39c87e2a2052104aeaab3a983683236ae87991/RefactoringChallenge.Common/Models/Product.cs" line-rate="0" branch-rate="1" complexity="2">
           <methods>
             <method name="GetPriceWithTax" signature="(System.Decimal)" line-rate="0" branch-rate="1" complexity="1">
               <lines>

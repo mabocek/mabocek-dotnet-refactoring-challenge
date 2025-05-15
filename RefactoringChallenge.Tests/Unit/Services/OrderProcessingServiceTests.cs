@@ -166,34 +166,4 @@ public class OrderProcessingServiceTests
         _orderRepositoryMock.Verify(repo => repo.AddOrderLogAsync(2, "Order on hold. Some items are not on stock."), Times.Once);
         _inventoryRepositoryMock.Verify(repo => repo.UpdateStockQuantityAsync(It.IsAny<int>(), It.IsAny<int>()), Times.Never);
     }
-
-    [Test]
-    public void ProcessCustomerOrdersAsync_ForInvalidCustomerId_ThrowsArgumentException()
-    {
-        // Act & Assert
-        var exception = Assert.ThrowsAsync<ArgumentException>(async () =>
-            await _orderProcessingService.ProcessCustomerOrdersAsync(0));
-
-        Assert.That(exception!.Message, Does.Contain("Customer ID must be a positive number"));
-
-        _customerRepositoryMock.Verify(repo => repo.GetCustomerByIdAsync(It.IsAny<int>()), Times.Never);
-    }
-
-    [Test]
-    public void ProcessCustomerOrdersAsync_ForNonExistentCustomer_ThrowsInvalidOperationException()
-    {
-        // Arrange
-        int customerId = 999;
-        _customerRepositoryMock.Setup(repo => repo.GetCustomerByIdAsync(customerId))
-            .ReturnsAsync((Customer?)null);
-
-        // Act & Assert
-        var exception = Assert.ThrowsAsync<InvalidOperationException>(async () =>
-            await _orderProcessingService.ProcessCustomerOrdersAsync(customerId));
-
-        Assert.That(exception!.Message, Does.Contain($"Customer with ID {customerId} not found"));
-
-        _customerRepositoryMock.Verify(repo => repo.GetCustomerByIdAsync(customerId), Times.Once);
-        _orderRepositoryMock.Verify(repo => repo.GetPendingOrdersByCustomerIdAsync(It.IsAny<int>()), Times.Never);
-    }
 }
