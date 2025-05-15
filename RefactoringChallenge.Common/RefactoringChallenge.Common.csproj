@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <RootNamespace>RefactoringChallenge</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+        <PackageReference Include="coverlet.collector" Version="6.0.4">
+          <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+          <PrivateAssets>all</PrivateAssets>
+        </PackageReference>
+        <PackageReference Include="Microsoft.Data.SqlClient" Version="6.0.2" />
+        <PackageReference Include="Microsoft.Extensions.Hosting" Version="9.0.2" />
+        <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.13.0" />
+        <PackageReference Include="Moq" Version="4.20.69" />
+        <PackageReference Include="NUnit" Version="4.3.2" />
+        <PackageReference Include="System.Data.SqlClient" Version="4.9.0" />
+    </ItemGroup>
+
+</Project>

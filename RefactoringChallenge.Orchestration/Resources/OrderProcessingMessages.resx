@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="StartingProcessCustomerOrders" xml:space="preserve">
+    <value>Starting to process orders for customer ID: {0}</value>
+  </data>
+  <data name="InvalidCustomerId" xml:space="preserve">
+    <value>Invalid customer ID: {0}</value>
+  </data>
+  <data name="CustomerIdMustBePositive" xml:space="preserve">
+    <value>Customer ID must be a positive number.</value>
+  </data>
+  <data name="CustomerNotFoundError" xml:space="preserve">
+    <value>Customer not found with ID: {0}</value>
+  </data>
+  <data name="CustomerNotFoundException" xml:space="preserve">
+    <value>Customer with ID {0} not found.</value>
+  </data>
+  <data name="CustomerFound" xml:space="preserve">
+    <value>Found customer: {0} (VIP: {1})</value>
+  </data>
+  <data name="PendingOrdersFound" xml:space="preserve">
+    <value>Found {0} pending orders for customer ID: {1}</value>
+  </data>
+  <data name="OrdersProcessingCompleted" xml:space="preserve">
+    <value>Completed processing {0} orders for customer ID: {1}</value>
+  </data>
+  <data name="ProcessingOrderId" xml:space="preserve">
+    <value>Processing order ID: {0}</value>
+  </data>
+  <data name="OrderRawTotal" xml:space="preserve">
+    <value>Order {0} raw total amount: {1}</value>
+  </data>
+  <data name="OrderProcessedWithDiscount" xml:space="preserve">
+    <value>Order {0} processed with {1}% discount. Final amount: {2}</value>
+  </data>
+  <data name="OrderUpdated" xml:space="preserve">
+    <value>Updated order {0} with processed status and discounts</value>
+  </data>
+  <data name="OrderReady" xml:space="preserve">
+    <value>Order {0} is ready for shipping</value>
+  </data>
+  <data name="OrderCompletedLog" xml:space="preserve">
+    <value>Order completed with {0}% discount. Total price: {1}</value>
+  </data>
+  <data name="OrderOnHold" xml:space="preserve">
+    <value>Order {0} is on hold due to insufficient inventory</value>
+  </data>
+  <data name="OrderOnHoldLog" xml:space="preserve">
+    <value>Order on hold. Some items are not on stock.</value>
+  </data>
+  <data name="InsufficientInventory" xml:space="preserve">
+    <value>Product ID {0} has insufficient inventory. Required: {1}, Available: {2}</value>
+  </data>
+  <data name="InventoryUpdated" xml:space="preserve">
+    <value>Updated inventory for product ID {0}, reduced by {1}</value>
+  </data>
+</root>

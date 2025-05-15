@@ -1,0 +1,35 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Worker">
+
+    <PropertyGroup>
+        <TargetFramework>net9.0</TargetFramework>
+        <Nullable>enable</Nullable>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+        <RootNamespace>RefactoringChallenge.Output</RootNamespace>
+    </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="../RefactoringChallenge.Common/RefactoringChallenge.Common.csproj" />
+    <ProjectReference Include="../RefactoringChallenge.Orchestration/RefactoringChallenge.Orchestration.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+        <PackageReference Include="coverlet.collector" Version="6.0.4">
+          <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+          <PrivateAssets>all</PrivateAssets>
+        </PackageReference>
+        <PackageReference Include="LanguageExt.Core" Version="4.4.9" />
+        <PackageReference Include="Microsoft.Extensions.Hosting" Version="9.0.2" />
+        <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.13.0" />
+        <PackageReference Include="Moq" Version="4.20.69" />
+        <PackageReference Include="NUnit" Version="4.3.2" />
+        <PackageReference Include="System.Data.SqlClient" Version="4.9.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Content Include="..\.dockerignore">
+        <Link>.dockerignore</Link>
+      </Content>
+    </ItemGroup>
+
+</Project>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="StartingProcessCustomerOrders" xml:space="preserve">
+    <value>Zahájení zpracování objednávek pro zákazníka s ID: {0}</value>
+  </data>
+  <data name="InvalidCustomerId" xml:space="preserve">
+    <value>Neplatné ID zákazníka: {0}</value>
+  </data>
+  <data name="CustomerIdMustBePositive" xml:space="preserve">
+    <value>ID zákazníka musí být kladné číslo.</value>
+  </data>
+  <data name="CustomerNotFoundError" xml:space="preserve">
+    <value>Zákazník s ID nebyl nalezen: {0}</value>
+  </data>
+  <data name="CustomerNotFoundException" xml:space="preserve">
+    <value>Zákazník s ID {0} nebyl nalezen.</value>
+  </data>
+  <data name="CustomerFound" xml:space="preserve">
+    <value>Nalezen zákazník: {0} (VIP: {1})</value>
+  </data>
+  <data name="PendingOrdersFound" xml:space="preserve">
+    <value>Nalezeno {0} čekajících objednávek pro zákazníka s ID: {1}</value>
+  </data>
+  <data name="OrdersProcessingCompleted" xml:space="preserve">
+    <value>Dokončeno zpracování {0} objednávek pro zákazníka s ID: {1}</value>
+  </data>
+  <data name="ProcessingOrderId" xml:space="preserve">
+    <value>Zpracování objednávky s ID: {0}</value>
+  </data>
+  <data name="OrderRawTotal" xml:space="preserve">
+    <value>Objednávka {0} hrubá celková částka: {1}</value>
+  </data>
+  <data name="OrderProcessedWithDiscount" xml:space="preserve">
+    <value>Objednávka {0} zpracována se slevou {1}%. Konečná částka: {2}</value>
+  </data>
+  <data name="OrderUpdated" xml:space="preserve">
+    <value>Aktualizována objednávka {0} se stavem zpracováno a slevami</value>
+  </data>
+  <data name="OrderReady" xml:space="preserve">
+    <value>Objednávka {0} je připravena k odeslání</value>
+  </data>
+  <data name="OrderCompletedLog" xml:space="preserve">
+    <value>Objednávka dokončena se slevou {0}%. Celková cena: {1}</value>
+  </data>
+  <data name="OrderOnHold" xml:space="preserve">
+    <value>Objednávka {0} je pozastavena z důvodu nedostatečných zásob</value>
+  </data>
+  <data name="OrderOnHoldLog" xml:space="preserve">
+    <value>Objednávka pozastavena. Některé položky nejsou skladem.</value>
+  </data>
+  <data name="InsufficientInventory" xml:space="preserve">
+    <value>Produkt s ID {0} má nedostatečné zásoby. Požadováno: {1}, K dispozici: {2}</value>
+  </data>
+  <data name="InventoryUpdated" xml:space="preserve">
+    <value>Aktualizovány zásoby pro produkt s ID {0}, sníženo o {1}</value>
+  </data>
+</root>

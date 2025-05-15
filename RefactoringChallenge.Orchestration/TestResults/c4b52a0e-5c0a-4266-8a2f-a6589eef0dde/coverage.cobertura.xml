@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<coverage line-rate="0" branch-rate="1" version="1.9" timestamp="1747318972" lines-covered="0" lines-valid="27" branches-covered="0" branches-valid="0">
+  <sources>
+    <source></source>
+  </sources>
+  <packages>
+    <package name="RefactoringChallenge.Common" line-rate="0" branch-rate="1" complexity="9">
+      <classes>
+        <class name="RefactoringChallenge.Models.Customer" filename="https://raw.githubusercontent.com/radekhubner/dotnet-refactoring-challenge/c06d94acdb390eb9ee33b087eb24b9ae1f385514/RefactoringChallenge.Common/Models/Customer.cs" line-rate="0" branch-rate="1" complexity="2">
+          <methods>
+            <method name="GetYearsAsCustomer" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="13" hits="0" branch="False" />
+                <line number="14" hits="0" branch="False" />
+                <line number="15" hits="0" branch="False" />
+              </lines>
+            </method>
+            <method name="ToString" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="19" hits="0" branch="False" />
+                <line number="20" hits="0" branch="False" />
+                <line number="21" hits="0" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="13" hits="0" branch="False" />
+            <line number="14" hits="0" branch="False" />
+            <line number="15" hits="0" branch="False" />
+            <line number="19" hits="0" branch="False" />
+            <line number="20" hits="0" branch="False" />
+            <line number="21" hits="0" branch="False" />
+          </lines>
+        </class>
+        <class name="RefactoringChallenge.Models.Order" filename="https://raw.githubusercontent.com/radekhubner/dotnet-refactoring-challenge/c06d94acdb390eb9ee33b087eb24b9ae1f385514/RefactoringChallenge.Common/Models/Order.cs" line-rate="0" branch-rate="1" complexity="3">
+          <methods>
+            <method name="GetFinalAmount" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="16" hits="0" branch="False" />
+                <line number="17" hits="0" branch="False" />
+                <line number="18" hits="0" branch="False" />
+              </lines>
+            </method>
+            <method name="IsReadyForShipping" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="22" hits="0" branch="False" />
+                <line number="23" hits="0" branch="False" />
+                <line number="24" hits="0" branch="False" />
+              </lines>
+            </method>
+            <method name="ToString" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="28" hits="0" branch="False" />
+                <line number="29" hits="0" branch="False" />
+                <line number="30" hits="0" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="16" hits="0" branch="False" />
+            <line number="17" hits="0" branch="False" />
+            <line number="18" hits="0" branch="False" />
+            <line number="22" hits="0" branch="False" />
+            <line number="23" hits="0" branch="False" />
+            <line number="24" hits="0" branch="False" />
+            <line number="28" hits="0" branch="False" />
+            <line number="29" hits="0" branch="False" />
+            <line number="30" hits="0" branch="False" />
+          </lines>
+        </class>
+        <class name="RefactoringChallenge.Models.OrderItem" filename="https://raw.githubusercontent.com/radekhubner/dotnet-refactoring-challenge/c06d94acdb390eb9ee33b087eb24b9ae1f385514/RefactoringChallenge.Common/Models/OrderItem.cs" line-rate="0" branch-rate="1" complexity="2">
+          <methods>
+            <method name="GetSubtotal" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="14" hits="0" branch="False" />
+                <line number="15" hits="0" branch="False" />
+                <line number="16" hits="0" branch="False" />
+              </lines>
+            </method>
+            <method name="ToString" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="20" hits="0" branch="False" />
+                <line number="21" hits="0" branch="False" />
+                <line number="22" hits="0" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="14" hits="0" branch="False" />
+            <line number="15" hits="0" branch="False" />
+            <line number="16" hits="0" branch="False" />
+            <line number="20" hits="0" branch="False" />
+            <line number="21" hits="0" branch="False" />
+            <line number="22" hits="0" branch="False" />
+          </lines>
+        </class>
+        <class name="RefactoringChallenge.Models.Product" filename="https://raw.githubusercontent.com/radekhubner/dotnet-refactoring-challenge/c06d94acdb390eb9ee33b087eb24b9ae1f385514/RefactoringChallenge.Common/Models/Product.cs" line-rate="0" branch-rate="1" complexity="2">
+          <methods>
+            <method name="GetPriceWithTax" signature="(System.Decimal)" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="12" hits="0" branch="False" />
+                <line number="13" hits="0" branch="False" />
+                <line number="14" hits="0" branch="False" />
+              </lines>
+            </method>
+            <method name="ToString" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="18" hits="0" branch="False" />
+                <line number="19" hits="0" branch="False" />
+                <line number="20" hits="0" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="12" hits="0" branch="False" />
+            <line number="13" hits="0" branch="False" />
+            <line number="14" hits="0" branch="False" />
+            <line number="18" hits="0" branch="False" />
+            <line number="19" hits="0" branch="False" />
+            <line number="20" hits="0" branch="False" />
+          </lines>
+        </class>
+      </classes>
+    </package>
+  </packages>
+</coverage>
