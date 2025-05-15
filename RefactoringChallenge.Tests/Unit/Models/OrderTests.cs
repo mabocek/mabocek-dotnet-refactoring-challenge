@@ -89,70 +89,9 @@ namespace RefactoringChallenge.Tests.Unit.Models
             Assert.That(result, Is.EqualTo("Order 101: Customer 42, Status: Processing, Total: $199.99"));
         }
 
-        [Test]
-        public void Order_ForcePropertyAccessorsToBeExecuted()
-        {
-            // This test uses reflection to force accessors to be executed
-            // which should ensure the model classes are included in coverage
-            var order = new Order();
-
-            // Get all properties
-            var properties = typeof(Order).GetProperties();
-
-            // Set and get each property to ensure code coverage
-            foreach (PropertyInfo prop in properties)
-            {
-                if (prop.Name == "Id")
-                {
-                    prop.SetValue(order, 42);
-                    var value = (int)prop.GetValue(order);
-                    Assert.That(value, Is.EqualTo(42));
-                }
-                else if (prop.Name == "CustomerId")
-                {
-                    prop.SetValue(order, 123);
-                    var value = (int)prop.GetValue(order);
-                    Assert.That(value, Is.EqualTo(123));
-                }
-                else if (prop.Name == "OrderDate")
-                {
-                    var date = new DateTime(2023, 5, 15);
-                    prop.SetValue(order, date);
-                    var value = (DateTime)prop.GetValue(order);
-                    Assert.That(value, Is.EqualTo(date));
-                }
-                else if (prop.Name == "TotalAmount")
-                {
-                    prop.SetValue(order, 999.99m);
-                    var value = (decimal)prop.GetValue(order);
-                    Assert.That(value, Is.EqualTo(999.99m));
-                }
-                else if (prop.Name == "DiscountPercent")
-                {
-                    prop.SetValue(order, 15.5m);
-                    var value = (decimal)prop.GetValue(order);
-                    Assert.That(value, Is.EqualTo(15.5m));
-                }
-                else if (prop.Name == "DiscountAmount")
-                {
-                    prop.SetValue(order, 155.0m);
-                    var value = (decimal)prop.GetValue(order);
-                    Assert.That(value, Is.EqualTo(155.0m));
-                }
-                else if (prop.Name == "Status")
-                {
-                    prop.SetValue(order, "Pending");
-                    var value = (string)prop.GetValue(order);
-                    Assert.That(value, Is.EqualTo("Pending"));
-                }
-                else if (prop.Name == "Items")
-                {
-                    var items = new List<OrderItem>();
-                    prop.SetValue(order, items);
-                    var value = prop.GetValue(order);
-                    Assert.That(value, Is.SameAs(items));
-                }
-            }
-        }
+        // Test removed: Order_ForcePropertyAccessorsToBeExecuted
+        // This test was removed because it was using reflection to artificially increase code coverage
+        // without properly testing business logic. The basic property functionality is already
+        // covered in the Order_Properties_WorkAsExpected test.
     }
 }

@@ -62,51 +62,9 @@ namespace RefactoringChallenge.Tests.Unit.Models
             Assert.That(result, Is.EqualTo("Customer 42: John Doe (john@example.com)"));
         }
 
-        [Test]
-        public void Customer_ForcePropertyAccessorsToBeExecuted()
-        {
-            // This test uses reflection to force accessors to be executed
-            // which should ensure the model classes are included in coverage
-            var customer = new Customer();
-
-            // Get all properties
-            var properties = typeof(Customer).GetProperties();
-
-            // Set and get each property to ensure code coverage
-            foreach (PropertyInfo prop in properties)
-            {
-                if (prop.Name == "Id")
-                {
-                    prop.SetValue(customer, 42);
-                    var value = (int)prop.GetValue(customer);
-                    Assert.That(value, Is.EqualTo(42));
-                }
-                else if (prop.Name == "Name")
-                {
-                    prop.SetValue(customer, "Test Name");
-                    var value = (string)prop.GetValue(customer);
-                    Assert.That(value, Is.EqualTo("Test Name"));
-                }
-                else if (prop.Name == "Email")
-                {
-                    prop.SetValue(customer, "test@example.net");
-                    var value = (string)prop.GetValue(customer);
-                    Assert.That(value, Is.EqualTo("test@example.net"));
-                }
-                else if (prop.Name == "IsVip")
-                {
-                    prop.SetValue(customer, true);
-                    var value = (bool)prop.GetValue(customer);
-                    Assert.That(value, Is.True);
-                }
-                else if (prop.Name == "RegistrationDate")
-                {
-                    var date = new DateTime(2023, 5, 15);
-                    prop.SetValue(customer, date);
-                    var value = (DateTime)prop.GetValue(customer);
-                    Assert.That(value, Is.EqualTo(date));
-                }
-            }
-        }
+        // Test removed: Customer_ForcePropertyAccessorsToBeExecuted
+        // This test was removed because it was using reflection to artificially increase code coverage
+        // without properly testing business logic. The basic property functionality is already
+        // covered in the Customer_Properties_WorkAsExpected test.
     }
 }

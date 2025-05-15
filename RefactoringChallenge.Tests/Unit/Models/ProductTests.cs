@@ -68,44 +68,9 @@ namespace RefactoringChallenge.Tests.Unit.Models
             Assert.That(result, Is.EqualTo("Product 42: Awesome Widget (Gadgets) - $199.99"));
         }
 
-        [Test]
-        public void Product_ForcePropertyAccessorsToBeExecuted()
-        {
-            // This test uses reflection to force accessors to be executed
-            // which should ensure the model classes are included in coverage
-            var product = new Product();
-
-            // Get all properties
-            var properties = typeof(Product).GetProperties();
-
-            // Set and get each property to ensure code coverage
-            foreach (PropertyInfo prop in properties)
-            {
-                if (prop.Name == "Id")
-                {
-                    prop.SetValue(product, 42);
-                    var value = (int)prop.GetValue(product);
-                    Assert.That(value, Is.EqualTo(42));
-                }
-                else if (prop.Name == "Name")
-                {
-                    prop.SetValue(product, "Awesome Product");
-                    var value = (string)prop.GetValue(product);
-                    Assert.That(value, Is.EqualTo("Awesome Product"));
-                }
-                else if (prop.Name == "Category")
-                {
-                    prop.SetValue(product, "Electronics");
-                    var value = (string)prop.GetValue(product);
-                    Assert.That(value, Is.EqualTo("Electronics"));
-                }
-                else if (prop.Name == "Price")
-                {
-                    prop.SetValue(product, 299.99m);
-                    var value = (decimal)prop.GetValue(product);
-                    Assert.That(value, Is.EqualTo(299.99m));
-                }
-            }
-        }
+        // Test removed: Product_ForcePropertyAccessorsToBeExecuted
+        // This test was removed because it was using reflection to artificially increase code coverage
+        // without properly testing business logic. The basic property functionality is already
+        // covered in the Product_Properties_WorkAsExpected test.
     }
 }

@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<coverage line-rate="0" branch-rate="0" version="1.9" timestamp="1747318973" lines-covered="0" lines-valid="531" branches-covered="0" branches-valid="140">
+<coverage line-rate="0" branch-rate="0" version="1.9" timestamp="1747340687" lines-covered="0" lines-valid="531" branches-covered="0" branches-valid="140">
   <sources>
     <source></source>
   </sources>
   <packages>
     <package name="RefactoringChallenge.Common" line-rate="0" branch-rate="1" complexity="9">
       <classes>
-        <class name="RefactoringChallenge.Models.Customer" filename="https://raw.githubusercontent.com/radekhubner/dotnet-refactoring-challenge/c06d94acdb390eb9ee33b087eb24b9ae1f385514/RefactoringChallenge.Common/Models/Customer.cs" line-rate="0" branch-rate="1" complexity="2">
+        <class name="RefactoringChallenge.Models.Customer" filename="https://raw.githubusercontent.com/mabocek/mabocek-dotnet-refactoring-challenge/bfce9d8556a1e7629e015c92ec2ba380fc2e485d/RefactoringChallenge.Common/Models/Customer.cs" line-rate="0" branch-rate="1" complexity="2">
           <methods>
             <method name="GetYearsAsCustomer" signature="()" line-rate="0" branch-rate="1" complexity="1">
               <lines>
@@ -32,7 +32,7 @@
             <line number="21" hits="0" branch="False" />
           </lines>
         </class>
-        <class name="RefactoringChallenge.Models.Order" filename="https://raw.githubusercontent.com/radekhubner/dotnet-refactoring-challenge/c06d94acdb390eb9ee33b087eb24b9ae1f385514/RefactoringChallenge.Common/Models/Order.cs" line-rate="0" branch-rate="1" complexity="3">
+        <class name="RefactoringChallenge.Models.Order" filename="https://raw.githubusercontent.com/mabocek/mabocek-dotnet-refactoring-challenge/bfce9d8556a1e7629e015c92ec2ba380fc2e485d/RefactoringChallenge.Common/Models/Order.cs" line-rate="0" branch-rate="1" complexity="3">
           <methods>
             <method name="GetFinalAmount" signature="()" line-rate="0" branch-rate="1" complexity="1">
               <lines>
@@ -68,7 +68,7 @@
             <line number="30" hits="0" branch="False" />
           </lines>
         </class>
-        <class name="RefactoringChallenge.Models.OrderItem" filename="https://raw.githubusercontent.com/radekhubner/dotnet-refactoring-challenge/c06d94acdb390eb9ee33b087eb24b9ae1f385514/RefactoringChallenge.Common/Models/OrderItem.cs" line-rate="0" branch-rate="1" complexity="2">
+        <class name="RefactoringChallenge.Models.OrderItem" filename="https://raw.githubusercontent.com/mabocek/mabocek-dotnet-refactoring-challenge/bfce9d8556a1e7629e015c92ec2ba380fc2e485d/RefactoringChallenge.Common/Models/OrderItem.cs" line-rate="0" branch-rate="1" complexity="2">
           <methods>
             <method name="GetSubtotal" signature="()" line-rate="0" branch-rate="1" complexity="1">
               <lines>
@@ -94,7 +94,7 @@
             <line number="22" hits="0" branch="False" />
           </lines>
         </class>
-        <class name="RefactoringChallenge.Models.Product" filename="https://raw.githubusercontent.com/radekhubner/dotnet-refactoring-challenge/c06d94acdb390eb9ee33b087eb24b9ae1f385514/RefactoringChallenge.Common/Models/Product.cs" line-rate="0" branch-rate="1" complexity="2">
+        <class name="RefactoringChallenge.Models.Product" filename="https://raw.githubusercontent.com/mabocek/mabocek-dotnet-refactoring-challenge/bfce9d8556a1e7629e015c92ec2ba380fc2e485d/RefactoringChallenge.Common/Models/Product.cs" line-rate="0" branch-rate="1" complexity="2">
           <methods>
             <method name="GetPriceWithTax" signature="(System.Decimal)" line-rate="0" branch-rate="1" complexity="1">
               <lines>
@@ -124,7 +124,7 @@
     </package>
     <package name="RefactoringChallenge.Orchestration" line-rate="0" branch-rate="0" complexity="168">
       <classes>
-        <class name="RefactoringChallenge.Services.OrderProcessingService" filename="https://raw.githubusercontent.com/radekhubner/dotnet-refactoring-challenge/c06d94acdb390eb9ee33b087eb24b9ae1f385514/RefactoringChallenge.Orchestration/Services/OrderProcessingService.cs" line-rate="0" branch-rate="0" complexity="10">
+        <class name="RefactoringChallenge.Services.OrderProcessingService" filename="https://raw.githubusercontent.com/mabocek/mabocek-dotnet-refactoring-challenge/bfce9d8556a1e7629e015c92ec2ba380fc2e485d/RefactoringChallenge.Orchestration/Services/OrderProcessingService.cs" line-rate="0" branch-rate="0" complexity="10">
           <methods>
             <method name=".ctor" signature="(RefactoringChallenge.Repositories.ICustomerRepository,RefactoringChallenge.Repositories.IOrderRepository,RefactoringChallenge.Repositories.IInventoryRepository,RefactoringChallenge.Services.IDiscountService,Microsoft.Extensions.Logging.ILogger`1&lt;RefactoringChallenge.Services.OrderProcessingService&gt;)" line-rate="0" branch-rate="0" complexity="10">
               <lines>
@@ -188,7 +188,7 @@
             <line number="29" hits="0" branch="False" />
           </lines>
         </class>
-        <class name="RefactoringChallenge.Services.OrderProcessingService/&lt;&gt;c" filename="https://raw.githubusercontent.com/radekhubner/dotnet-refactoring-challenge/c06d94acdb390eb9ee33b087eb24b9ae1f385514/RefactoringChallenge.Orchestration/Services/OrderProcessingService.cs" line-rate="0" branch-rate="1" complexity="1">
+        <class name="RefactoringChallenge.Services.OrderProcessingService/&lt;&gt;c" filename="https://raw.githubusercontent.com/mabocek/mabocek-dotnet-refactoring-challenge/bfce9d8556a1e7629e015c92ec2ba380fc2e485d/RefactoringChallenge.Orchestration/Services/OrderProcessingService.cs" line-rate="0" branch-rate="1" complexity="1">
           <methods>
             <method name="&lt;ProcessOrderAsync&gt;b__7_0" signature="(RefactoringChallenge.Models.OrderItem)" line-rate="0" branch-rate="1" complexity="1">
               <lines>
@@ -200,7 +200,7 @@
             <line number="72" hits="0" branch="False" />
           </lines>
         </class>
-        <class name="RefactoringChallenge.Services.OrderProcessingService/&lt;CheckAndUpdateInventoryAsync&gt;d__8" filename="https://raw.githubusercontent.com/radekhubner/dotnet-refactoring-challenge/c06d94acdb390eb9ee33b087eb24b9ae1f385514/RefactoringChallenge.Orchestration/Services/OrderProcessingService.cs" line-rate="0" branch-rate="0" complexity="8">
+        <class name="RefactoringChallenge.Services.OrderProcessingService/&lt;CheckAndUpdateInventoryAsync&gt;d__8" filename="https://raw.githubusercontent.com/mabocek/mabocek-dotnet-refactoring-challenge/bfce9d8556a1e7629e015c92ec2ba380fc2e485d/RefactoringChallenge.Orchestration/Services/OrderProcessingService.cs" line-rate="0" branch-rate="0" complexity="8">
           <methods>
             <method name="MoveNext" signature="()" line-rate="0" branch-rate="0" complexity="8">
               <lines>
@@ -272,7 +272,7 @@
             <line number="137" hits="0" branch="False" />
           </lines>
         </class>
-        <class name="RefactoringChallenge.Services.OrderProcessingService/&lt;ProcessCustomerOrdersAsync&gt;d__6" filename="https://raw.githubusercontent.com/radekhubner/dotnet-refactoring-challenge/c06d94acdb390eb9ee33b087eb24b9ae1f385514/RefactoringChallenge.Orchestration/Services/OrderProcessingService.cs" line-rate="0" branch-rate="0" complexity="6">
+        <class name="RefactoringChallenge.Services.OrderProcessingService/&lt;ProcessCustomerOrdersAsync&gt;d__6" filename="https://raw.githubusercontent.com/mabocek/mabocek-dotnet-refactoring-challenge/bfce9d8556a1e7629e015c92ec2ba380fc2e485d/RefactoringChallenge.Orchestration/Services/OrderProcessingService.cs" line-rate="0" branch-rate="0" complexity="6">
           <methods>
             <method name="MoveNext" signature="()" line-rate="0" branch-rate="0" complexity="6">
               <lines>
@@ -352,7 +352,7 @@
             <line number="65" hits="0" branch="False" />
           </lines>
         </class>
-        <class name="RefactoringChallenge.Services.OrderProcessingService/&lt;ProcessOrderAsync&gt;d__7" filename="https://raw.githubusercontent.com/radekhubner/dotnet-refactoring-challenge/c06d94acdb390eb9ee33b087eb24b9ae1f385514/RefactoringChallenge.Orchestration/Services/OrderProcessingService.cs" line-rate="0" branch-rate="0" complexity="2">
+        <class name="RefactoringChallenge.Services.OrderProcessingService/&lt;ProcessOrderAsync&gt;d__7" filename="https://raw.githubusercontent.com/mabocek/mabocek-dotnet-refactoring-challenge/bfce9d8556a1e7629e015c92ec2ba380fc2e485d/RefactoringChallenge.Orchestration/Services/OrderProcessingService.cs" line-rate="0" branch-rate="0" complexity="2">
           <methods>
             <method name="MoveNext" signature="()" line-rate="0" branch-rate="0" complexity="2">
               <lines>
@@ -430,7 +430,7 @@
             <line number="112" hits="0" branch="False" />
           </lines>
         </class>
-        <class name="RefactoringChallenge.Orchestration.Services.DiscountService" filename="https://raw.githubusercontent.com/radekhubner/dotnet-refactoring-challenge/c06d94acdb390eb9ee33b087eb24b9ae1f385514/RefactoringChallenge.Orchestration/Services/DiscountService.cs" line-rate="0" branch-rate="0" complexity="20">
+        <class name="RefactoringChallenge.Orchestration.Services.DiscountService" filename="https://raw.githubusercontent.com/mabocek/mabocek-dotnet-refactoring-challenge/bfce9d8556a1e7629e015c92ec2ba380fc2e485d/RefactoringChallenge.Orchestration/Services/DiscountService.cs" line-rate="0" branch-rate="0" complexity="20">
           <methods>
             <method name="CalculateDiscountPercentage" signature="(RefactoringChallenge.Models.Customer,System.Decimal)" line-rate="0" branch-rate="0" complexity="6">
               <lines>
@@ -610,7 +610,7 @@
             <line number="14" hits="0" branch="False" />
           </lines>
         </class>
-        <class name="RefactoringChallenge.Orchestration.Resources.LocalizationHelper" filename="https://raw.githubusercontent.com/radekhubner/dotnet-refactoring-challenge/c06d94acdb390eb9ee33b087eb24b9ae1f385514/RefactoringChallenge.Orchestration/Resources/LocalizationHelper.cs" line-rate="0" branch-rate="0" complexity="5">
+        <class name="RefactoringChallenge.Orchestration.Resources.LocalizationHelper" filename="https://raw.githubusercontent.com/mabocek/mabocek-dotnet-refactoring-challenge/bfce9d8556a1e7629e015c92ec2ba380fc2e485d/RefactoringChallenge.Orchestration/Resources/LocalizationHelper.cs" line-rate="0" branch-rate="0" complexity="5">
           <methods>
             <method name="Initialize" signature="(System.String)" line-rate="0" branch-rate="0" complexity="4">
               <lines>
@@ -674,7 +674,7 @@
             <line number="42" hits="0" branch="False" />
           </lines>
         </class>
-        <class name="RefactoringChallenge.Orchestration.Resources.OrderProcessingMessages" filename="https://raw.githubusercontent.com/radekhubner/dotnet-refactoring-challenge/c06d94acdb390eb9ee33b087eb24b9ae1f385514/RefactoringChallenge.Orchestration/Resources/OrderProcessingMessages.Designer.cs" line-rate="0" branch-rate="0" complexity="23">
+        <class name="RefactoringChallenge.Orchestration.Resources.OrderProcessingMessages" filename="https://raw.githubusercontent.com/mabocek/mabocek-dotnet-refactoring-challenge/bfce9d8556a1e7629e015c92ec2ba380fc2e485d/RefactoringChallenge.Orchestration/Resources/OrderProcessingMessages.Designer.cs" line-rate="0" branch-rate="0" complexity="23">
           <methods>
             <method name="get_ResourceManager" signature="()" line-rate="0" branch-rate="0" complexity="2">
               <lines>
@@ -916,7 +916,7 @@
             <line number="36" hits="0" branch="False" />
           </lines>
         </class>
-        <class name="RefactoringChallenge.Orchestration.Repositories.CustomerRepository" filename="https://raw.githubusercontent.com/radekhubner/dotnet-refactoring-challenge/c06d94acdb390eb9ee33b087eb24b9ae1f385514/RefactoringChallenge.Orchestration/Repositories/CustomerRepository.cs" line-rate="0" branch-rate="0" complexity="2">
+        <class name="RefactoringChallenge.Orchestration.Repositories.CustomerRepository" filename="https://raw.githubusercontent.com/mabocek/mabocek-dotnet-refactoring-challenge/bfce9d8556a1e7629e015c92ec2ba380fc2e485d/RefactoringChallenge.Orchestration/Repositories/CustomerRepository.cs" line-rate="0" branch-rate="0" complexity="2">
           <methods>
             <method name=".ctor" signature="(RefactoringChallenge.Factories.IDatabaseConnectionFactory)" line-rate="0" branch-rate="0" complexity="2">
               <lines>
@@ -940,7 +940,7 @@
             <line number="16" hits="0" branch="False" />
           </lines>
         </class>
-        <class name="RefactoringChallenge.Orchestration.Repositories.CustomerRepository/&lt;GetCustomerByIdAsync&gt;d__2" filename="https://raw.githubusercontent.com/radekhubner/dotnet-refactoring-challenge/c06d94acdb390eb9ee33b087eb24b9ae1f385514/RefactoringChallenge.Orchestration/Repositories/CustomerRepository.cs" line-rate="0" branch-rate="0" complexity="6">
+        <class name="RefactoringChallenge.Orchestration.Repositories.CustomerRepository/&lt;GetCustomerByIdAsync&gt;d__2" filename="https://raw.githubusercontent.com/mabocek/mabocek-dotnet-refactoring-challenge/bfce9d8556a1e7629e015c92ec2ba380fc2e485d/RefactoringChallenge.Orchestration/Repositories/CustomerRepository.cs" line-rate="0" branch-rate="0" complexity="6">
           <methods>
             <method name="MoveNext" signature="()" line-rate="0" branch-rate="0" complexity="6">
               <lines>
@@ -1016,7 +1016,7 @@
             <line number="46" hits="0" branch="False" />
           </lines>
         </class>
-        <class name="RefactoringChallenge.Orchestration.Repositories.InventoryRepository" filename="https://raw.githubusercontent.com/radekhubner/dotnet-refactoring-challenge/c06d94acdb390eb9ee33b087eb24b9ae1f385514/RefactoringChallenge.Orchestration/Repositories/InventoryRepository.cs" line-rate="0" branch-rate="0" complexity="2">
+        <class name="RefactoringChallenge.Orchestration.Repositories.InventoryRepository" filename="https://raw.githubusercontent.com/mabocek/mabocek-dotnet-refactoring-challenge/bfce9d8556a1e7629e015c92ec2ba380fc2e485d/RefactoringChallenge.Orchestration/Repositories/InventoryRepository.cs" line-rate="0" branch-rate="0" complexity="2">
           <methods>
             <method name=".ctor" signature="(RefactoringChallenge.Factories.IDatabaseConnectionFactory)" line-rate="0" branch-rate="0" complexity="2">
               <lines>
@@ -1040,7 +1040,7 @@
             <line number="15" hits="0" branch="False" />
           </lines>
         </class>
-        <class name="RefactoringChallenge.Orchestration.Repositories.InventoryRepository/&lt;GetStockQuantityByProductIdAsync&gt;d__2" filename="https://raw.githubusercontent.com/radekhubner/dotnet-refactoring-challenge/c06d94acdb390eb9ee33b087eb24b9ae1f385514/RefactoringChallenge.Orchestration/Repositories/InventoryRepository.cs" line-rate="0" branch-rate="0" complexity="2">
+        <class name="RefactoringChallenge.Orchestration.Repositories.InventoryRepository/&lt;GetStockQuantityByProductIdAsync&gt;d__2" filename="https://raw.githubusercontent.com/mabocek/mabocek-dotnet-refactoring-challenge/bfce9d8556a1e7629e015c92ec2ba380fc2e485d/RefactoringChallenge.Orchestration/Repositories/InventoryRepository.cs" line-rate="0" branch-rate="0" complexity="2">
           <methods>
             <method name="MoveNext" signature="()" line-rate="0" branch-rate="0" complexity="2">
               <lines>
@@ -1080,7 +1080,7 @@
             <line number="33" hits="0" branch="False" />
           </lines>
         </class>
-        <class name="RefactoringChallenge.Orchestration.Repositories.InventoryRepository/&lt;UpdateStockQuantityAsync&gt;d__3" filename="https://raw.githubusercontent.com/radekhubner/dotnet-refactoring-challenge/c06d94acdb390eb9ee33b087eb24b9ae1f385514/RefactoringChallenge.Orchestration/Repositories/InventoryRepository.cs" line-rate="0" branch-rate="1" complexity="1">
+        <class name="RefactoringChallenge.Orchestration.Repositories.InventoryRepository/&lt;UpdateStockQuantityAsync&gt;d__3" filename="https://raw.githubusercontent.com/mabocek/mabocek-dotnet-refactoring-challenge/bfce9d8556a1e7629e015c92ec2ba380fc2e485d/RefactoringChallenge.Orchestration/Repositories/InventoryRepository.cs" line-rate="0" branch-rate="1" complexity="1">
           <methods>
             <method name="MoveNext" signature="()" line-rate="0" branch-rate="1" complexity="1">
               <lines>
@@ -1118,7 +1118,7 @@
             <line number="55" hits="0" branch="False" />
           </lines>
         </class>
-        <class name="RefactoringChallenge.Orchestration.Repositories.OrderRepository" filename="https://raw.githubusercontent.com/radekhubner/dotnet-refactoring-challenge/c06d94acdb390eb9ee33b087eb24b9ae1f385514/RefactoringChallenge.Orchestration/Repositories/OrderRepository.cs" line-rate="0" branch-rate="0" complexity="4">
+        <class name="RefactoringChallenge.Orchestration.Repositories.OrderRepository" filename="https://raw.githubusercontent.com/mabocek/mabocek-dotnet-refactoring-challenge/bfce9d8556a1e7629e015c92ec2ba380fc2e485d/RefactoringChallenge.Orchestration/Repositories/OrderRepository.cs" line-rate="0" branch-rate="0" complexity="4">
           <methods>
             <method name=".ctor" signature="(RefactoringChallenge.Factories.IDatabaseConnectionFactory,RefactoringChallenge.Repositories.IProductRepository)" line-rate="0" branch-rate="0" complexity="4">
               <lines>
@@ -1152,7 +1152,7 @@
             <line number="18" hits="0" branch="False" />
           </lines>
         </class>
-        <class name="RefactoringChallenge.Orchestration.Repositories.OrderRepository/&lt;AddOrderLogAsync&gt;d__7" filename="https://raw.githubusercontent.com/radekhubner/dotnet-refactoring-challenge/c06d94acdb390eb9ee33b087eb24b9ae1f385514/RefactoringChallenge.Orchestration/Repositories/OrderRepository.cs" line-rate="0" branch-rate="1" complexity="1">
+        <class name="RefactoringChallenge.Orchestration.Repositories.OrderRepository/&lt;AddOrderLogAsync&gt;d__7" filename="https://raw.githubusercontent.com/mabocek/mabocek-dotnet-refactoring-challenge/bfce9d8556a1e7629e015c92ec2ba380fc2e485d/RefactoringChallenge.Orchestration/Repositories/OrderRepository.cs" line-rate="0" branch-rate="1" complexity="1">
           <methods>
             <method name="MoveNext" signature="()" line-rate="0" branch-rate="1" complexity="1">
               <lines>
@@ -1198,7 +1198,7 @@
             <line number="193" hits="0" branch="False" />
           </lines>
         </class>
-        <class name="RefactoringChallenge.Orchestration.Repositories.OrderRepository/&lt;GetOrderByIdAsync&gt;d__8" filename="https://raw.githubusercontent.com/radekhubner/dotnet-refactoring-challenge/c06d94acdb390eb9ee33b087eb24b9ae1f385514/RefactoringChallenge.Orchestration/Repositories/OrderRepository.cs" line-rate="0" branch-rate="0" complexity="12">
+        <class name="RefactoringChallenge.Orchestration.Repositories.OrderRepository/&lt;GetOrderByIdAsync&gt;d__8" filename="https://raw.githubusercontent.com/mabocek/mabocek-dotnet-refactoring-challenge/bfce9d8556a1e7629e015c92ec2ba380fc2e485d/RefactoringChallenge.Orchestration/Repositories/OrderRepository.cs" line-rate="0" branch-rate="0" complexity="12">
           <methods>
             <method name="MoveNext" signature="()" line-rate="0" branch-rate="0" complexity="12">
               <lines>
@@ -1304,7 +1304,7 @@
             <line number="236" hits="0" branch="False" />
           </lines>
         </class>
-        <class name="RefactoringChallenge.Orchestration.Repositories.OrderRepository/&lt;GetOrderItemsByOrderIdAsync&gt;d__4" filename="https://raw.githubusercontent.com/radekhubner/dotnet-refactoring-challenge/c06d94acdb390eb9ee33b087eb24b9ae1f385514/RefactoringChallenge.Orchestration/Repositories/OrderRepository.cs" line-rate="0" branch-rate="0" complexity="12">
+        <class name="RefactoringChallenge.Orchestration.Repositories.OrderRepository/&lt;GetOrderItemsByOrderIdAsync&gt;d__4" filename="https://raw.githubusercontent.com/mabocek/mabocek-dotnet-refactoring-challenge/bfce9d8556a1e7629e015c92ec2ba380fc2e485d/RefactoringChallenge.Orchestration/Repositories/OrderRepository.cs" line-rate="0" branch-rate="0" complexity="12">
           <methods>
             <method name="MoveNext" signature="()" line-rate="0" branch-rate="0" complexity="12">
               <lines>
@@ -1426,7 +1426,7 @@
             <line number="105" hits="0" branch="False" />
           </lines>
         </class>
-        <class name="RefactoringChallenge.Orchestration.Repositories.OrderRepository/&lt;GetPendingOrdersByCustomerIdAsync&gt;d__3" filename="https://raw.githubusercontent.com/radekhubner/dotnet-refactoring-challenge/c06d94acdb390eb9ee33b087eb24b9ae1f385514/RefactoringChallenge.Orchestration/Repositories/OrderRepository.cs" line-rate="0" branch-rate="0" complexity="14">
+        <class name="RefactoringChallenge.Orchestration.Repositories.OrderRepository/&lt;GetPendingOrdersByCustomerIdAsync&gt;d__3" filename="https://raw.githubusercontent.com/mabocek/mabocek-dotnet-refactoring-challenge/bfce9d8556a1e7629e015c92ec2ba380fc2e485d/RefactoringChallenge.Orchestration/Repositories/OrderRepository.cs" line-rate="0" branch-rate="0" complexity="14">
           <methods>
             <method name="MoveNext" signature="()" line-rate="0" branch-rate="0" complexity="14">
               <lines>
@@ -1548,7 +1548,7 @@
             <line number="61" hits="0" branch="False" />
           </lines>
         </class>
-        <class name="RefactoringChallenge.Orchestration.Repositories.OrderRepository/&lt;UpdateOrderAsync&gt;d__5" filename="https://raw.githubusercontent.com/radekhubner/dotnet-refactoring-challenge/c06d94acdb390eb9ee33b087eb24b9ae1f385514/RefactoringChallenge.Orchestration/Repositories/OrderRepository.cs" line-rate="0" branch-rate="1" complexity="1">
+        <class name="RefactoringChallenge.Orchestration.Repositories.OrderRepository/&lt;UpdateOrderAsync&gt;d__5" filename="https://raw.githubusercontent.com/mabocek/mabocek-dotnet-refactoring-challenge/bfce9d8556a1e7629e015c92ec2ba380fc2e485d/RefactoringChallenge.Orchestration/Repositories/OrderRepository.cs" line-rate="0" branch-rate="1" complexity="1">
           <methods>
             <method name="MoveNext" signature="()" line-rate="0" branch-rate="1" complexity="1">
               <lines>
@@ -1610,7 +1610,7 @@
             <line number="144" hits="0" branch="False" />
           </lines>
         </class>
-        <class name="RefactoringChallenge.Orchestration.Repositories.OrderRepository/&lt;UpdateOrderStatusAsync&gt;d__6" filename="https://raw.githubusercontent.com/radekhubner/dotnet-refactoring-challenge/c06d94acdb390eb9ee33b087eb24b9ae1f385514/RefactoringChallenge.Orchestration/Repositories/OrderRepository.cs" line-rate="0" branch-rate="1" complexity="1">
+        <class name="RefactoringChallenge.Orchestration.Repositories.OrderRepository/&lt;UpdateOrderStatusAsync&gt;d__6" filename="https://raw.githubusercontent.com/mabocek/mabocek-dotnet-refactoring-challenge/bfce9d8556a1e7629e015c92ec2ba380fc2e485d/RefactoringChallenge.Orchestration/Repositories/OrderRepository.cs" line-rate="0" branch-rate="1" complexity="1">
           <methods>
             <method name="MoveNext" signature="()" line-rate="0" branch-rate="1" complexity="1">
               <lines>
@@ -1648,7 +1648,7 @@
             <line number="166" hits="0" branch="False" />
           </lines>
         </class>
-        <class name="RefactoringChallenge.Orchestration.Repositories.ProductRepository" filename="https://raw.githubusercontent.com/radekhubner/dotnet-refactoring-challenge/c06d94acdb390eb9ee33b087eb24b9ae1f385514/RefactoringChallenge.Orchestration/Repositories/ProductRepository.cs" line-rate="0" branch-rate="0" complexity="2">
+        <class name="RefactoringChallenge.Orchestration.Repositories.ProductRepository" filename="https://raw.githubusercontent.com/mabocek/mabocek-dotnet-refactoring-challenge/bfce9d8556a1e7629e015c92ec2ba380fc2e485d/RefactoringChallenge.Orchestration/Repositories/ProductRepository.cs" line-rate="0" branch-rate="0" complexity="2">
           <methods>
             <method name=".ctor" signature="(RefactoringChallenge.Factories.IDatabaseConnectionFactory)" line-rate="0" branch-rate="0" complexity="2">
               <lines>
@@ -1672,7 +1672,7 @@
             <line number="16" hits="0" branch="False" />
           </lines>
         </class>
-        <class name="RefactoringChallenge.Orchestration.Repositories.ProductRepository/&lt;GetProductByIdAsync&gt;d__2" filename="https://raw.githubusercontent.com/radekhubner/dotnet-refactoring-challenge/c06d94acdb390eb9ee33b087eb24b9ae1f385514/RefactoringChallenge.Orchestration/Repositories/ProductRepository.cs" line-rate="0" branch-rate="0" complexity="6">
+        <class name="RefactoringChallenge.Orchestration.Repositories.ProductRepository/&lt;GetProductByIdAsync&gt;d__2" filename="https://raw.githubusercontent.com/mabocek/mabocek-dotnet-refactoring-challenge/bfce9d8556a1e7629e015c92ec2ba380fc2e485d/RefactoringChallenge.Orchestration/Repositories/ProductRepository.cs" line-rate="0" branch-rate="0" complexity="6">
           <methods>
             <method name="MoveNext" signature="()" line-rate="0" branch-rate="0" complexity="6">
               <lines>
@@ -1746,7 +1746,7 @@
             <line number="45" hits="0" branch="False" />
           </lines>
         </class>
-        <class name="RefactoringChallenge.Orchestration.Helpers.ConnectionStringHelper" filename="https://raw.githubusercontent.com/radekhubner/dotnet-refactoring-challenge/c06d94acdb390eb9ee33b087eb24b9ae1f385514/RefactoringChallenge.Orchestration/Helpers/ConnectionStringHelper.cs" line-rate="0" branch-rate="0" complexity="12">
+        <class name="RefactoringChallenge.Orchestration.Helpers.ConnectionStringHelper" filename="https://raw.githubusercontent.com/mabocek/mabocek-dotnet-refactoring-challenge/bfce9d8556a1e7629e015c92ec2ba380fc2e485d/RefactoringChallenge.Orchestration/Helpers/ConnectionStringHelper.cs" line-rate="0" branch-rate="0" complexity="12">
           <methods>
             <method name="MaskConnectionString" signature="(System.String)" line-rate="0" branch-rate="0" complexity="12">
               <lines>
@@ -1862,7 +1862,7 @@
             <line number="54" hits="0" branch="False" />
           </lines>
         </class>
-        <class name="RefactoringChallenge.Orchestration.Factories.SqlConnectionFactory" filename="https://raw.githubusercontent.com/radekhubner/dotnet-refactoring-challenge/c06d94acdb390eb9ee33b087eb24b9ae1f385514/RefactoringChallenge.Orchestration/Factories/SqlConnectionFactory.cs" line-rate="0" branch-rate="0" complexity="9">
+        <class name="RefactoringChallenge.Orchestration.Factories.SqlConnectionFactory" filename="https://raw.githubusercontent.com/mabocek/mabocek-dotnet-refactoring-challenge/bfce9d8556a1e7629e015c92ec2ba380fc2e485d/RefactoringChallenge.Orchestration/Factories/SqlConnectionFactory.cs" line-rate="0" branch-rate="0" complexity="9">
           <methods>
             <method name="CreateSqlConnection" signature="(System.String)" line-rate="0" branch-rate="1" complexity="1">
               <lines>
@@ -1942,7 +1942,7 @@
             <line number="35" hits="0" branch="False" />
           </lines>
         </class>
-        <class name="RefactoringChallenge.Orchestration.Factories.SqlConnectionFactory/&lt;CreateConnectionAsync&gt;d__3" filename="https://raw.githubusercontent.com/radekhubner/dotnet-refactoring-challenge/c06d94acdb390eb9ee33b087eb24b9ae1f385514/RefactoringChallenge.Orchestration/Factories/SqlConnectionFactory.cs" line-rate="0" branch-rate="0" complexity="6">
+        <class name="RefactoringChallenge.Orchestration.Factories.SqlConnectionFactory/&lt;CreateConnectionAsync&gt;d__3" filename="https://raw.githubusercontent.com/mabocek/mabocek-dotnet-refactoring-challenge/bfce9d8556a1e7629e015c92ec2ba380fc2e485d/RefactoringChallenge.Orchestration/Factories/SqlConnectionFactory.cs" line-rate="0" branch-rate="0" complexity="6">
           <methods>
             <method name="MoveNext" signature="()" line-rate="0" branch-rate="0" complexity="6">
               <lines>

@@ -79,57 +79,9 @@ namespace RefactoringChallenge.Tests.Unit.Models
             Assert.That(result, Is.EqualTo("OrderItem 42: 7x Product 123 at $9.99 each"));
         }
 
-        [Test]
-        public void OrderItem_ForcePropertyAccessorsToBeExecuted()
-        {
-            // This test uses reflection to force accessors to be executed
-            // which should ensure the model classes are included in coverage
-            var orderItem = new OrderItem();
-            var product = new Product();
-
-            // Get all properties
-            var properties = typeof(OrderItem).GetProperties();
-
-            // Set and get each property to ensure code coverage
-            foreach (PropertyInfo prop in properties)
-            {
-                if (prop.Name == "Id")
-                {
-                    prop.SetValue(orderItem, 42);
-                    var value = (int)prop.GetValue(orderItem);
-                    Assert.That(value, Is.EqualTo(42));
-                }
-                else if (prop.Name == "OrderId")
-                {
-                    prop.SetValue(orderItem, 123);
-                    var value = (int)prop.GetValue(orderItem);
-                    Assert.That(value, Is.EqualTo(123));
-                }
-                else if (prop.Name == "ProductId")
-                {
-                    prop.SetValue(orderItem, 456);
-                    var value = (int)prop.GetValue(orderItem);
-                    Assert.That(value, Is.EqualTo(456));
-                }
-                else if (prop.Name == "Quantity")
-                {
-                    prop.SetValue(orderItem, 10);
-                    var value = (int)prop.GetValue(orderItem);
-                    Assert.That(value, Is.EqualTo(10));
-                }
-                else if (prop.Name == "UnitPrice")
-                {
-                    prop.SetValue(orderItem, 59.99m);
-                    var value = (decimal)prop.GetValue(orderItem);
-                    Assert.That(value, Is.EqualTo(59.99m));
-                }
-                else if (prop.Name == "Product")
-                {
-                    prop.SetValue(orderItem, product);
-                    var value = prop.GetValue(orderItem);
-                    Assert.That(value, Is.SameAs(product));
-                }
-            }
-        }
+        // Test removed: OrderItem_ForcePropertyAccessorsToBeExecuted
+        // This test was removed because it was using reflection to artificially increase code coverage
+        // without properly testing business logic. The basic property functionality is already
+        // covered in the OrderItem_Properties_WorkAsExpected test.
     }
 }
